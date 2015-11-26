@@ -42,6 +42,6 @@ Spree::CheckoutController.class_eval do
       bill_address.update_attribute(:user_id, spree_current_user.try(:id))
     end
 
-    ship_address.update_attribute(:user_id, spree_current_user.try(:id))
+    #ship_address.update_attribute(:user_id, spree_current_user.try(:id))
   end
 end
