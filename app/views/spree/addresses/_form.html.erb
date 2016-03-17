@@ -15,5 +15,5 @@
     <% next if field == "alternative_#{address_id}_phone" && !Spree::Config["alternative_#{address_id}_phone"] %>
     <%= address_field(address_form, field.to_sym, address_id) %>
   <% end %>
-This is a test
+  <%= address_form.hidden_field :user_id %>
 <% end %>
